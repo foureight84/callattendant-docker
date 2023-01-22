@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  callattendant:
+    image: callattendant:1.1.1
+    container_name: callattendant
+    hostname: callattendant
+    restart: unless-stopped
+    # replace with path to your modem
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+    volumes:
+      - config:/home/ca/.callattendant
+    environment:
+      - TZ=America/Los_Angeles
+    ports:
+      - target: 5000
+        published: 5000
+        protocol: tcp
+        mode: host
+volumes:
+  config:
