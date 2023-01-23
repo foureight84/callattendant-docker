@@ -1,9 +1,6 @@
 #### Dockerized [Callattendant](https://github.com/emxsys/callattendant)
 The original project by [emxsys](https://github.com/emxsys) [https://github.com/emxsys/callattendant](https://github.com/emxsys/callattendant) is intended to run on the Raspberry Pi. This uses my fork of the project with gpiozero, RPi.GPIO and RPIO dependency removed.
 
-**Note:**
-This is an initial test. I am having issues with the modem passthrough not detecting calls. Additional debug is needed. Feel free to create a ticket if you get it working.
-
 Usage:
 ```bash
 git clone git@github.com:foureight84/callattendant-docker.git callattendant
