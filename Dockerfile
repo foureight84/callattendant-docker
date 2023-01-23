@@ -27,6 +27,6 @@ RUN mkdir -p /home/$USERNAME/.local/bin
 ENV PATH="${PATH}:/home/${USERNAME}/.local/bin"
 COPY config .callattendant
 RUN sudo chown -R $USERNAME:$USERNAME .
-RUN pip3 install -e git+https://github.com/advfr/callattendant.git@master#egg=callattendant
+RUN pip3 install -e git+https://github.com/foureight84/callattendant.git@no-gpio#egg=callattendant
 ENTRYPOINT callattendant --config app.cfg
 EXPOSE 5000
