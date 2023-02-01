@@ -7,7 +7,7 @@ git clone git@github.com:foureight84/callattendant-docker.git callattendant
 
 cd callattendant
 
-Docker build -t callattendant:1.1.1-no-gpio .
+Docker build -t callattendant:1.1.2-no-gpio .
 ```
 
 The build process generates a non-root container. The running user is `ca` with the default data-path of `/home/ca/.callattendant`. I've included a basic config file you you can always replace that with your own or generate a sample with the `--create-folder` flag.
